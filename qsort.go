@@ -2,11 +2,9 @@ package main
 
 var arr []int
 
-
 func swap(i, j int) {
 	arr[j], arr[i] = arr[i], arr[j]
 }
-
 
 func less(i, j int) bool {
 	if (arr[i] > arr[j]) || (arr[i] == arr[j]) {
@@ -14,7 +12,6 @@ func less(i, j int) bool {
 	}
 	return true
 }
-
 
 func partition(less func(i, j int) bool, swap func(i, j int), start int, end int) int {
 	i := start
@@ -43,5 +40,5 @@ func qsort(n int, less func(i, j int) bool, swap func(i, j int)) {
 }
 
 func main() {
-	
+
 }
